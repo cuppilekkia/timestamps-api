@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css" type="text/css" />
+    <title>Timestamp Microservice exercise for FCC</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container content">
+            <h1 class="title">Timestamps API Microservice exercise for FCC</h1>
+            
+            <blockquote>User Stories:
+                <ol>
+                    <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix
+                        timestamp or a natural language date (example: January 1, 2016)
+                    </li>
+                    <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+                    <li>If it does not contain a date or Unix timestamp, it returns <code>null</code> for those properties.</li>
+                </ol>
+            </blockquote>
+            <h3>Endpoints:</h3>
+            <code>/:unix-timestamp</code><br>
+            <code>/:month day, year</code>
+            <p>return the date in format "Month DD, YYYY" and in Unix format</p>
+            <code>{
+            "unix": "1452556800",
+            "natural": "January 12, 2016"
+            }</code>
+        </div>
+    </section>
+</body>
+</html>
